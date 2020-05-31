@@ -5,7 +5,10 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "generate:component": "cd ./src/components && vgc sudo vgc --style scss --script ts --spec ts --postfix component",
+    "generate:view": "cd ./src/views && vgc sudo vgc --style scss --script ts --spec ts --postfix view",
+    "generate:ui-component": "cd ./src/components/ui && vgc sudo vgc --style scss --script ts --spec ts --postfix ui.component"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -35,6 +38,7 @@
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
     "typescript": "~3.9.3",
+    "vue-generate-component": "^3.0.1",
     "vue-template-compiler": "^2.6.11"
   },
   "gitHooks": {
