@@ -1,3 +1,12 @@
 <section class="search-box-component">
-  <h1>search-box-component Component</h1>
+  <input class="search-box" type="text" placeholder="search breeds" />
+  <ul class="suggestions" v-if="false">
+    <!-- add v-if here and loop throguh suggestions between see all and this element -->
+    <li>
+      <a href="/breed/african"><span>a</span>frican</a>
+    </li>
+    <li>
+      <a href="/search?term=1">see all results >></a>
+    </li>
+  </ul>
 </section>

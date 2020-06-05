@@ -59,4 +59,18 @@ export default {
     z-index: 1;
   }
 }
+
+h1 {
+  font-size: 64px;
+  margin-bottom: 64px;
+}
+
+h1.special {
+  span {
+    display: block;
+    font-size: 225px;
+    text-shadow: 0 4px 16px rgba(#000, 0.25);
+    margin-bottom: -24px;
+  }
+}
 </style>
