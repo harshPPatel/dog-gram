@@ -20,6 +20,21 @@ const routes: Array<RouteConfig> = [
     name: 'Search',
     component: () => import(/* webpackChunkName: "search" */ '../views/Search.view/index.vue'),
   },
+  {
+    path: '/breeds/:breed',
+    name: 'Breed',
+    component: () => import(/* webpackChunkName: "breed" */ '../views/Breed.view/index.vue'),
+  },
+  {
+    path: '/breeds/:breed/:subBreed',
+    name: 'SubBreed',
+    component: () => import(/* webpackChunkName: "subBreed" */ '../views/SubBreed.view/index.vue'),
+  },
+  {
+    path: '/*',
+    name: 'NotFound',
+    component: () => import(/* webpackChunkName: "404" */ '../views/NotFound.view/index.vue'),
+  },
 ];
 
 const router = new VueRouter({

@@ -25,6 +25,10 @@
 [ ] responsive
 [ ] favicon
 [ ] refactoring
+  [ ] cache dogs API request as it returns same data everytime
+  [ ] make sure API calls made in store
+  [ ] remove extra styles for `a` tag as we have that style in App.vue
+  [ ] make sure we are updating the bg text
 
 ### stretch
 [ ] dark mode

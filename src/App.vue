@@ -12,8 +12,13 @@
 </template>
 
 <script>
+import Vue from 'vue';
+import { VueMasonryPlugin } from 'vue-masonry';
+
 import NavbarUiComponent from '@/components/ui/navbar.ui.component/index.vue';
 import FooterUiComponent from '@/components/ui/footer.ui.component/index.vue';
+
+Vue.use(VueMasonryPlugin);
 
 export default {
   name: 'app',
@@ -65,12 +70,61 @@ h1 {
   margin-bottom: 64px;
 }
 
+h2 {
+  font-weight: normal;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
 h1.special {
   span {
     display: block;
     font-size: 225px;
     text-shadow: 0 4px 16px rgba(#000, 0.25);
     margin-bottom: -24px;
+  }
+}
+
+a {
+  color: #000;
+  transition: all .2s ease;
+
+  &:link,
+  &:visited {
+    opacity: 1;
+  }
+
+  &:hover,
+  &:active {
+    opacity: 0.65;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+
+  .sidebar {
+    width: 30%;
+  }
+
+  .gallery {
+    width: 70%;
+  }
+}
+
+.container-404 {
+  text-align: center;
+  h1.special {
+    font-weight: normal;
+    span {
+      font-size: 175px;
+      text-shadow: 0 4px 16px rgba(#000, 0.25);
+      margin-bottom: 8px;
+    }
   }
 }
 </style>

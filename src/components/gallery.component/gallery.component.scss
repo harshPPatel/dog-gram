@@ -1,0 +1,15 @@
+.gallery-component {
+  .gallery {
+    width: 100%;
+    .item {
+      max-width: 175px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 8px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}

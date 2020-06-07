@@ -1,0 +1,21 @@
+.not-found-view {
+  text-align: center;
+  margin-top: 15vh;
+
+  h1.special {
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+
+  p.lead {
+    font-size: 32px;
+    margin: 32px 0;
+  }
+
+  a {
+    font-size: 18px;
+    &:last-of-type {
+      margin-left: 24px;
+    }
+  }
+}
