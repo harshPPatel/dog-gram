@@ -26,6 +26,9 @@ export default {
     NavbarUiComponent,
     FooterUiComponent,
   },
+  mounted() {
+    this.$store.dispatch('Breeds/fetchBreeds');
+  },
 };
 </script>
 
@@ -98,6 +101,10 @@ a {
   &:active {
     opacity: 0.65;
   }
+}
+
+.text-primary {
+  color: #ba8538 !important;
 }
 
 .container {

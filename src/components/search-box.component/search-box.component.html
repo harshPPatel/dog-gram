@@ -1,13 +1,18 @@
 <section class="search-box-component">
-  <input class="search-box" type="text" placeholder="search breeds" />
-  <ul class="suggestions" v-if="true">
+  <input
+    class="search-box"
+    type="text"
+    placeholder="search breeds"
+    @input="searchBreeds"
+    v-model="searchTerm" />
+  <ul class="suggestions" v-if="searchTerm">
     <!-- add v-if here and loop throguh suggestions between see all and this element -->
-    <li>
-      <a href="/breed/african"><span>a</span>frican</a>
+    <li v-for="result in searchResults">
+      <a class="searchLink" :href="`/breed/${result}`" v-html="formatSearchResult(result)"></a>
     </li>
-    <li>
+    <li v-if="searchResults.length">
       <a href="/search?term=1">see all results >></a>
     </li>
-    <li>No results Found 😔!</li>
+    <li v-if="searchResults.length === 0">No results Found 😔!</li>
   </ul>
 </section>
