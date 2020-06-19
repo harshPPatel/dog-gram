@@ -8,10 +8,10 @@
   <ul class="suggestions" v-if="searchTerm">
     <!-- add v-if here and loop throguh suggestions between see all and this element -->
     <li v-for="result in searchResults">
-      <a class="searchLink" :href="`/breed/${result}`" v-html="formatSearchResult(result)"></a>
+      <a class="searchLink" :href="`/breeds/${result}`" v-html="formatSearchResult(result)"></a>
     </li>
     <li v-if="searchResults.length">
-      <a href="/search?term=1">see all results >></a>
+      <a :href="`/search?term=${searchTerm}`">see all results >></a>
     </li>
     <li v-if="searchResults.length === 0">No results Found 😔!</li>
   </ul>
