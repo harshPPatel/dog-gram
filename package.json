@@ -14,7 +14,7 @@
     "core-js": "^3.6.5",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
-    "vue-class-component": "^7.2.3",
+    "vue-class-component": "^7.2.6",
     "vue-masonry": "^0.11.8",
     "vue-property-decorator": "^8.4.2",
     "vue-router": "^3.2.0",
